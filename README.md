@@ -1,1 +1,5 @@
 # KTANE-helper
+
+This is a personal project looking to automate som parts of the Coop game Keep Talking and Nobody Explodes(KTANE). There are two parts two this project. One is a front-end written primarily in php and javascript, and the back end is a API using the fastAPI python library. Theese two parts are connected via HTTP requests. While this is not ideal and a framework would improve both performance and cohenrency, i decided against it simply because i am primarily using this project as a way for me to learn to integrate different parts and to send and recieve requests. 
+
+I have been hosting the front-end on the XAMPP environment in order to access the sites on localhost. The python files and the api folder does not need to be accessible via XAMPP, but can be run locally on port 8000 by running "uvicorn main:app --reload" on commandline while in the api folder. The main file can also be run directly, and if you do you can specify any port instead of 8000 by changing the function argument called at the bottom of the file.
